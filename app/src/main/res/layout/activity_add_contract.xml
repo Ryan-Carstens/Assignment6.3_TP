@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="za.ac.cput.assignment6.addContractActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contract Add:"
+        android:id="@+id/textViewContractAdd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="IdCheckNum"
+        android:id="@+id/IdCheckNumView"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/textViewContractAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/IdCheckNumDisplayView"
+        android:layout_alignTop="@+id/IdCheckNumView"
+        android:layout_toRightOf="@+id/textViewContractAdd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DetailsCheckNum"
+        android:id="@+id/DetailsCheckNumView"
+        android:layout_below="@+id/IdCheckNumView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/DetailsCheckNumDisplayView"
+        android:layout_alignBottom="@+id/DetailsCheckNumView"
+        android:layout_alignRight="@+id/IdCheckNumDisplayView"
+        android:layout_alignEnd="@+id/IdCheckNumDisplayView"
+        android:layout_toRightOf="@+id/DetailsCheckNumView"
+        android:layout_toEndOf="@+id/DetailsCheckNumView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="contractType"
+        android:id="@+id/contractTypeView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/contractTypeDisplayView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/DetailsCheckNumView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="contractNum"
+        android:id="@+id/contractNumView"
+        android:layout_below="@+id/contractTypeView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/contractNumDisplayView"
+        android:layout_alignBottom="@+id/contractNumView"
+        android:layout_alignLeft="@+id/contractTypeDisplayView"
+        android:layout_alignStart="@+id/contractTypeDisplayView"
+        android:layout_alignRight="@+id/contractTypeDisplayView"
+        android:layout_alignEnd="@+id/contractTypeDisplayView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contract"
+        android:id="@+id/buttonAddContract"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textViewContractAdd"
+        android:layout_alignEnd="@+id/textViewContractAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="addContract" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/buttonCancel"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_alignTop="@+id/buttonAddContract"
+        android:layout_alignLeft="@+id/contractNumDisplayView"
+        android:layout_alignStart="@+id/contractNumDisplayView"
+        android:layout_alignRight="@+id/contractNumDisplayView"
+        android:layout_alignEnd="@+id/contractNumDisplayView" />
+</RelativeLayout>

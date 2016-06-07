@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Contract-Creator</string>
+    <string name="enterContractDetailsActivity">enterContractDetailsActivity</string>
+</resources>
